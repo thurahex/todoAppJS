@@ -73,7 +73,7 @@ const editBtn = list.querySelector("#editBtn")
 editBtn.onclick = () =>{
   const taskListText = list.querySelector("#taskListText")
   const inputEdit =document.createElement("input")
-  inputEdit.classList.add("border-2","border-black")
+  inputEdit.classList.add("border-2","border-black","sm:w-full","w-[135px]")
   inputEdit.value = taskListText.innerText
   taskListText.innerText = null
 
