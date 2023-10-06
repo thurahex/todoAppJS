@@ -66,6 +66,7 @@ deleteBtn.onclick = () =>{
 
   confirm("Are you sure? ") && list.remove()
   listCount()
+  listDoneCount()
 
 }
 
