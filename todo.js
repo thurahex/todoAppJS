@@ -101,11 +101,18 @@ return list
 
 addBtn.addEventListener("click", () =>{
 
-  taskLists.append(createUiList(textInput.value))
-  listCount()
+  if(textInput){
+    taskLists.append(createUiList(textInput.value))
+    listCount()
+
+    textInput.value=null
+  }
+  else{
+    textInput.innerText = "put you works"
+  }
+  
   
 
-  textInput.value=null
 
 })
 
